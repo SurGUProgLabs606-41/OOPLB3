@@ -220,6 +220,57 @@ public:
         fromSerial(toSerial() / value);
         return *this;
     }
+
+    // Бинарные операторы используют операторы присваивания
+    friend Date operator+(Date lhs, int days) {
+        lhs += days;
+        return lhs;
+    }
+
+    friend Date operator-(Date lhs, int days) {
+        lhs -= days;
+        return lhs;
+    }
+
+    friend Date operator*(Date lhs, int value) {
+        lhs *= value;
+        return lhs;
+    }
+
+    friend Date operator/(Date lhs, int value) {
+        lhs /= value;
+        return lhs;
+    }
+
+    // Разность двух дат в днях
+    long long operator-(const Date& other) const {
+        return toSerial() - other.toSerial();
+    }
+
+    // Операторы сравнения
+    bool operator<(const Date& other) const {
+        return toSerial() < other.toSerial();
+    }
+
+    bool operator>(const Date& other) const {
+        return toSerial() > other.toSerial();
+    }
+
+    bool operator<=(const Date& other) const {
+        return toSerial() <= other.toSerial();
+    }
+
+    bool operator>=(const Date& other) const {
+        return toSerial() >= other.toSerial();
+    }
+
+    bool operator==(const Date& other) const {
+        return toSerial() == other.toSerial();
+    }
+
+    bool operator!=(const Date& other) const {
+        return toSerial() != other.toSerial();
+    }
 };
 
 // Инициализация статического поля
