@@ -364,6 +364,57 @@ int main() {
         cout << "\nПосле /= 2: ";
         b.print();
         cout << endl;
+
+
+        // 5. Бинарные арифметические операторы
+        cout << "\n5. Операторы +, -, *, /\n";
+
+        Date c(10, 10, 2026);
+
+        cout << "c + 5: ";
+        (c + 5).print();
+
+        cout << "\nc - 3: ";
+        (c - 3).print();
+
+        cout << "\nc * 2: ";
+        (c * 2).print();
+
+        cout << "\nc / 2: ";
+        (c / 2).print();
+
+        cout << "\nРазность дат: "
+             << (Date(20, 10, 2026) - Date(10, 10, 2026))
+             << " дней\n";
+
+        // 6. Операторы сравнения
+        cout << "\n6. Операторы сравнения\n";
+
+        Date first(10, 10, 2026);
+        Date second(20, 10, 2026);
+        Date same(10, 10, 2026);
+
+        cout << "first < second: " << (first < second) << endl;
+        cout << "first > second: " << (first > second) << endl;
+        cout << "first <= second: " << (first <= second) << endl;
+        cout << "first >= second: " << (first >= second) << endl;
+        cout << "first == same: " << (first == same) << endl;
+        cout << "first != second: " << (first != second) << endl;
+
+        // 7. Демонстрация mutable
+        cout << "\n7. mutable\n";
+
+        const Date constDate(15, 10, 2026);
+
+        cout << "Константная дата: ";
+        constDate.print();
+
+        cout << "\nДень: " << constDate.getDay();
+        cout << "\nМесяц: " << constDate.getMonth();
+        cout << "\nГод: " << constDate.getYear();
+
+        cout << "\nСчетчик обращений: "
+             << constDate.getAccessCount() << endl;
     }
     catch (const exception& e) {
         cerr << "\nОшибка: " << e.what() << endl;
