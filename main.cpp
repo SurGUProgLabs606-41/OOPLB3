@@ -276,6 +276,23 @@ public:
 // Инициализация статического поля
 int Date::objectCount = 0;
 
+// Класс мероприятия
+class Event {
+public:
+    string name;
+    Date date;
+
+    Event(const string& name, const Date& date)
+        : name(name), date(date) {}
+
+    void print() const {
+        cout << name << " — ";
+        date.print();
+        cout << ", " << date.getWeekDay() << endl;
+    }
+};
+
+
 int main() {
     try {
         cout << "Лабораторная работа №3. Вариант №7\n";
@@ -415,6 +432,42 @@ int main() {
 
         cout << "\nСчетчик обращений: "
              << constDate.getAccessCount() << endl;
+
+
+        // 8. Расписание мероприятий
+        cout << "\n8. Расписание мероприятий\n";
+
+        vector<Event> events = {
+            Event("Лекция", Date(5, 10, 2026)),
+            Event("Практическая работа", Date(10, 10, 2026)),
+            Event("Экзамен", Date(20, 10, 2026)),
+            Event("Конференция", Date(15, 11, 2026)),
+            Event("Зачет", Date(25, 10, 2026))
+        };
+
+        for (const Event& event : events) {
+            event.print();
+        }
+
+        int monthCount = 0;
+        int yearCount = 0;
+
+        for (const Event& event : events) {
+            if (event.date.getMonth() == 10 &&
+                event.date.getYear() == 2026) {
+                monthCount++;
+            }
+
+            if (event.date.getYear() == 2026) {
+                yearCount++;
+            }
+        }
+
+        cout << "\nМероприятий за октябрь 2026: "
+             << monthCount << endl;
+
+        cout << "Мероприятий за 2026 год: "
+             << yearCount << endl;
     }
     catch (const exception& e) {
         cerr << "\nОшибка: " << e.what() << endl;
