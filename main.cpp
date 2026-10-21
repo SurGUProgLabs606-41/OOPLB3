@@ -167,6 +167,43 @@ public:
 
         return weekdays[(toSerial() - 1) % 7];
     }
+
+    // Арифметические операторы присваивания
+    Date& operator+=(int days) {
+        fromSerial(toSerial() + days);
+        return *this;
+    }
+
+    Date& operator-=(int days) {
+        fromSerial(toSerial() - days);
+        return *this;
+    }
+
+    // Префиксный инкремент: следующий день
+    Date& operator++() {
+        *this += 1;
+        return *this;
+    }
+
+    // Постфиксный инкремент: возвращает старую дату
+    Date operator++(int) {
+        Date old(*this);
+        ++(*this);
+        return old;
+    }
+
+    // Префиксный декремент: предыдущий день
+    Date& operator--() {
+        *this -= 1;
+        return *this;
+    }
+
+    // Постфиксный декремент: возвращает старую дату
+    Date operator--(int) {
+        Date old(*this);
+        --(*this);
+        return old;
+    }
 };
 
 // Инициализация статического поля
