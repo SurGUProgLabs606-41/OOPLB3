@@ -468,6 +468,11 @@ int main() {
 
         cout << "Мероприятий за 2026 год: "
              << yearCount << endl;
+
+
+        // 9. Статическое поле
+        cout << "\nКоличество существующих объектов Date: "
+             << Date::getObjectCount() << endl;
     }
     catch (const exception& e) {
         cerr << "\nОшибка: " << e.what() << endl;
