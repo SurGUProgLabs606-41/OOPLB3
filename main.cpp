@@ -204,6 +204,22 @@ public:
         --(*this);
         return old;
     }
+
+    // Умножение порядкового номера даты
+    Date& operator*=(int value) {
+        fromSerial(toSerial() * value);
+        return *this;
+    }
+
+    // Деление порядкового номера даты
+    Date& operator/=(int value) {
+        if (value == 0) {
+            throw invalid_argument("Деление на ноль");
+        }
+
+        fromSerial(toSerial() / value);
+        return *this;
+    }
 };
 
 // Инициализация статического поля
