@@ -1,0 +1,5 @@
+<map id="Event" name="Event">
+<area shape="rect" id="Node000001" title="Мероприятие с названием и датой проведения." alt="" coords="5,102,61,128"/>
+<area shape="rect" id="Node000002" href="$class_date.html" title="Класс для хранения и обработки календарной даты." alt="" coords="8,5,58,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,45,36,102,30,101,31,47"/>
+</map>

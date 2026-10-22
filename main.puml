@@ -1,0 +1,78 @@
+
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class Date {
+    - day : int
+    - month : int
+    - year : int
+    - accessCount : int {mutable}
+    - objectCount : int {static}
+
+    + Date()
+    + Date(day : int, month : int, year : int)
+    + Date(other : Date)
+    + ~Date()
+
+    + print() : void
+    + getDay() : int
+    + getMonth() : int
+    + getYear() : int
+    + getAccessCount() : int
+    + getWeekDay() : int
+
+    + operator+=(days : int) : Date&
+    + operator-=(days : int) : Date&
+    + operator*=(value : int) : Date&
+    + operator/=(value : int) : Date&
+
+    + operator++() : Date&
+    + operator++(int) : Date
+    + operator--() : Date&
+    + operator--(int) : Date
+
+    + operator+(days : int) : Date
+    + operator-(days : int) : Date
+    + operator*(value : int) : Date
+    + operator/(value : int) : Date
+
+    + operator-(other : Date) : int
+
+    + operator<(other : Date) : bool
+    + operator>(other : Date) : bool
+    + operator<=(other : Date) : bool
+    + operator>=(other : Date) : bool
+    + operator==(other : Date) : bool
+    + operator!=(other : Date) : bool
+
+    - isLeapYear(year : int) : bool
+    - daysInMonth(month : int, year : int) : int
+    - toSerial() : int
+    - fromSerial(value : int) : Date
+}
+
+class Event {
+    + name : string
+    + date : Date
+
+    + Event(name : string, date : Date)
+    + print() : void
+}
+
+Event *-- Date : содержит дату
+
+note right of Date
+  explicit-конструктор:
+  Date(int, int, int)
+
+  mutable позволяет изменять
+  accessCount даже у const-объекта.
+end note
+
+note bottom of Date
+  objectCount — статическое поле,
+  общее для всех объектов Date.
+end note
+
+@enduml
