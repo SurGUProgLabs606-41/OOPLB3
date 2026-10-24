@@ -1,0 +1,124 @@
+\doxysection{Date.\+cpp File Reference}
+\hypertarget{_date_8cpp}{}\label{_date_8cpp}\index{Date.cpp@{Date.cpp}}
+
+
+Реализация методов классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}.  
+
+
+{\ttfamily \+\#include "{}Date.\+h"{}}\newline
+Include dependency graph for Date.\+cpp:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{_date_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{_date_8cpp_a85cb7692125ef02b0f365066682174d1}{operator+}} (\doxymbox{\hyperlink{class_date}{Date}} lhs, int days)
+\begin{DoxyCompactList}\small\item\em Возвращает дату, сдвинутую вперёд на заданное число дней. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{_date_8cpp_a4634000e48f34baa13eb75c81e41136f}{operator-\/}} (\doxymbox{\hyperlink{class_date}{Date}} lhs, int days)
+\begin{DoxyCompactList}\small\item\em Возвращает дату, сдвинутую назад на заданное число дней. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{_date_8cpp_a4bf9b52efd14bd5edb20be53e9e67600}{operator\texorpdfstring{$\ast$}{*}}} (\doxymbox{\hyperlink{class_date}{Date}} lhs, int value)
+\begin{DoxyCompactList}\small\item\em Умножает порядковый номер даты и возвращает результат. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{_date_8cpp_ac0501aa1fe2457b4f89525611f9e9cff}{operator/}} (\doxymbox{\hyperlink{class_date}{Date}} lhs, int value)
+\begin{DoxyCompactList}\small\item\em Делит порядковый номер даты и возвращает результат. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реализация методов классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}. 
+
+
+
+\label{_date_8cpp_doc-func-members}
+\Hypertarget{_date_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_date_8cpp_a4bf9b52efd14bd5edb20be53e9e67600}\index{Date.cpp@{Date.cpp}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Date.cpp@{Date.cpp}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{_date_8cpp_a4bf9b52efd14bd5edb20be53e9e67600} 
+\doxymbox{\hyperlink{class_date}{Date}} operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_date}{Date}}}]{lhs}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Умножает порядковый номер даты и возвращает результат. 
+
+Умножает порядковый номер даты.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Исходная дата. \\
+\hline
+{\em value} & Множитель. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новая дата. 
+\end{DoxyReturn}
+\Hypertarget{_date_8cpp_a85cb7692125ef02b0f365066682174d1}\index{Date.cpp@{Date.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Date.cpp@{Date.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{_date_8cpp_a85cb7692125ef02b0f365066682174d1} 
+\doxymbox{\hyperlink{class_date}{Date}} operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_date}{Date}}}]{lhs}{, }\item[{int}]{days}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает дату, сдвинутую вперёд на заданное число дней. 
+
+Прибавляет дни и возвращает новую дату.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Исходная дата. \\
+\hline
+{\em days} & Число дней. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новая дата. 
+\end{DoxyReturn}
+\Hypertarget{_date_8cpp_a4634000e48f34baa13eb75c81e41136f}\index{Date.cpp@{Date.cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Date.cpp@{Date.cpp}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{_date_8cpp_a4634000e48f34baa13eb75c81e41136f} 
+\doxymbox{\hyperlink{class_date}{Date}} operator-\/ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_date}{Date}}}]{lhs}{, }\item[{int}]{days}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает дату, сдвинутую назад на заданное число дней. 
+
+Вычитает дни и возвращает новую дату.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Исходная дата. \\
+\hline
+{\em days} & Число дней. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новая дата. 
+\end{DoxyReturn}
+\Hypertarget{_date_8cpp_ac0501aa1fe2457b4f89525611f9e9cff}\index{Date.cpp@{Date.cpp}!operator/@{operator/}}
+\index{operator/@{operator/}!Date.cpp@{Date.cpp}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \label{_date_8cpp_ac0501aa1fe2457b4f89525611f9e9cff} 
+\doxymbox{\hyperlink{class_date}{Date}} operator/ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_date}{Date}}}]{lhs}{, }\item[{int}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Делит порядковый номер даты и возвращает результат. 
+
+Делит порядковый номер даты.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & Исходная дата. \\
+\hline
+{\em value} & Делитель. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Новая дата. 
+\end{DoxyReturn}

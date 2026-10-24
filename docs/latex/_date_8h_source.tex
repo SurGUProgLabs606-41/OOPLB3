@@ -1,0 +1,82 @@
+\doxysection{Date.\+h}
+\hypertarget{_date_8h_source}{}\label{_date_8h_source}\doxymbox{\hyperlink{_date_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ DATE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DATE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ day;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ month;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ year;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{mutable}\ \textcolor{keywordtype}{int}\ accessCount;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ objectCount;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ isLeapYear(\textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ daysInMonth(\textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ validate()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ toSerial()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ fromSerial(\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ serial);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}(\textcolor{keywordtype}{int}\ day,\ \textcolor{keywordtype}{int}\ month\ =\ 1,\ \textcolor{keywordtype}{int}\ year\ =\ 2000);}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other);}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{\string~Date}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_date_aa3b521a999bdfafb51a934f01f8f6c9c}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{getDay}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{getMonth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{getYear}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_date_aac85bac326e910572f1d1bd7aaea6aad}{getAccessCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_date_accd3eef0e8db8ee23e8773d103ea8f90}{getObjectCount}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_date_ab64d06478b955af2d63862a601ac9b00}{getWeekDay}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_aa507b1b99767eea29296b4907ef81755}{operator+=}}(\textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00072\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_a6bc50f3ce739cdb784b565f57632cc58}{operator-\/=}}(\textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00074\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_a3993e645e3408e07d12b70e58f36630c}{operator++}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_a3993e645e3408e07d12b70e58f36630c}{operator++}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00078\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_af94a19bebfa4018745039275d9eab42e}{operator-\/-\/}}();}
+\DoxyCodeLine{00080\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_af94a19bebfa4018745039275d9eab42e}{operator-\/-\/}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00082\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_ab1a8b4ddb4b501d4d0fbd930e4576c8f}{operator*=}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00084\ \ \ \ \ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ \doxymbox{\hyperlink{class_date_a418925e3cf6491db1832b56ef1b7e8d0}{operator/=}}(\textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_a85cb7692125ef02b0f365066682174d1}{operator+}}(\doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ lhs,\ \textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_a4634000e48f34baa13eb75c81e41136f}{operator-\/}}(\doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ lhs,\ \textcolor{keywordtype}{int}\ days);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_a4bf9b52efd14bd5edb20be53e9e67600}{operator*}}(\doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ lhs,\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ \doxymbox{\hyperlink{class_date_ac0501aa1fe2457b4f89525611f9e9cff}{operator/}}(\doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\ lhs,\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \doxymbox{\hyperlink{class_date_a4634000e48f34baa13eb75c81e41136f}{operator-\/}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_a56469dbfb6a0c32326330796cb316881}{operator<}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_ab2943ef426612046e084e2d885c5fed4}{operator>}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_aff6e110a1bba92225dfa094e904c003e}{operator<=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_a93d583e1a8eae7cc606a6fdbfc3c5c58}{operator>=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_a3b103cc8257d3055aedb519fff343503}{operator==}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_date_af47f5313d22ea8a75eb9270d433abd6b}{operator!=}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00157\ \};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00163\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_event_aa08176b2cc80169e7e59498f2c86fe47}{Event}}\ \{}
+\DoxyCodeLine{00164\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_event_a2260aa14c4dfb50ad5db1dd71ece65eb}{name}};}
+\DoxyCodeLine{00168\ \ \ \ \ \doxymbox{\hyperlink{class_date}{Date}}\ \doxymbox{\hyperlink{class_event_a67ba6f103d6826dbdb146a5138732a27}{date}};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00171\ \ \ \ \ \doxymbox{\hyperlink{class_event_aa08176b2cc80169e7e59498f2c86fe47}{Event}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \doxymbox{\hyperlink{class_event_a2260aa14c4dfb50ad5db1dd71ece65eb}{name}},\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_date}{Date}}\&\ \doxymbox{\hyperlink{class_event_a67ba6f103d6826dbdb146a5138732a27}{date}});}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_event_ab1b48a39a41a7fc92a25617adcf68aa8}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00174\ \};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

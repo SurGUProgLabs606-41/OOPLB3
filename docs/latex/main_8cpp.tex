@@ -2,54 +2,31 @@
 \hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
 
 
-Лабораторная работа №3, вариант №7.  
+Лабораторная работа №3, вариант №7. Демонстрация классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}.  
 
 
 {\ttfamily \+\#include $<$iostream$>$}\newline
-{\ttfamily \+\#include $<$string$>$}\newline
-{\ttfamily \+\#include $<$vector$>$}\newline
 {\ttfamily \+\#include $<$stdexcept$>$}\newline
 {\ttfamily \+\#include $<$type\+\_\+traits$>$}\newline
-Include dependency graph for main.\+cpp:
-\nopagebreak
+{\ttfamily \+\#include "{}Date.\+h"{}}\newline
+Include dependency graph for main.\+cpp:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{main_8cpp__incl}
+\includegraphics[width=313pt]{main_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsubsection*{Classes}
-\begin{DoxyCompactItemize}
-\item 
-class \doxymbox{\hyperlink{class_date}{Date}}
-\begin{DoxyCompactList}\small\item\em Класс для хранения и обработки календарной даты. \end{DoxyCompactList}\item 
-class \doxymbox{\hyperlink{class_event}{Event}}
-\begin{DoxyCompactList}\small\item\em Мероприятие с названием и датой проведения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
-\begin{DoxyCompactList}\small\item\em Демонстрирует возможности классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Лабораторная работа №3, вариант №7. 
+Лабораторная работа №3, вариант №7. Демонстрация классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}. 
 
-Программа демонстрирует классы \doxylink{class_date}{Date} и \doxylink{class_event}{Event}, конструкторы, деструктор, перегрузку операторов, explicit, mutable, статическое поле и обработку исключений.
 
-Выполненные задания:
-\begin{DoxyEnumerate}
-\item Три конструктора.
-\item Префиксные и постфиксные ++ и --.
-\item Операторы +=, -\/=, \texorpdfstring{$\ast$}{*}=, /=.
-\item Бинарные арифметические операторы и сравнения.
-\item Использование explicit и mutable.
-\item Одно статическое поле.
-\item Пользовательский деструктор.
-\item Демонстрация операторов в \doxylink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}.
-\item Демонстрация запрета неявного преобразования.
-\item Изменение mutable-\/поля константного объекта. 
-\end{DoxyEnumerate}
 
 \label{main_8cpp_doc-func-members}
 \Hypertarget{main_8cpp_doc-func-members}
@@ -60,18 +37,9 @@ int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 {\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
 int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-
-
-Демонстрирует возможности классов \doxylink{class_date}{Date} и \doxylink{class_event}{Event}. 
-
-\+[Задание 8] Проверяется работа конструкторов, преобразований, унарных, арифметических и сравнительных операторов. \+[Задание 9] Демонстрируется запрет неявного преобразования с explicit. \+[Задание 10] Проверяется изменение mutable-\/поля const-\/объекта.
-
-\begin{DoxyReturn}{Returns}
-0 при успешном выполнении; 1 при обработанном исключении. 
-\end{DoxyReturn}
 \+[Задание 1] Демонстрация трёх конструкторов.
 
-d1 создаётся конструктором по умолчанию, d2 — параметризованным конструктором, d3 — конструктором копирования.
+d1 -\/ создаётся конструктором по умолчанию, d2 — параметризованным конструктором, d3 — конструктором копирования.
 
 \+[Задания 5 и 9] Демонстрация explicit.
 
@@ -93,7 +61,7 @@ d1 создаётся конструктором по умолчанию, d2 —
 
 const\+Date нельзя изменять обычными операциями. Однако print(), get\+Day(), get\+Month() и get\+Year() увеличивают access\+Count, потому что поле объявлено mutable.
 
-Создаёт список мероприятий и выводит расписание.
+Создаёт массив мероприятий и выводит расписание.
 
 Каждый \doxylink{class_event}{Event} содержит название и объект \doxylink{class_date}{Date}.
 

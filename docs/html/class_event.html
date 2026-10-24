@@ -114,13 +114,15 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_event.ht
 
 <p>Мероприятие с названием и датой проведения.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_date_8h_source.html">Date.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Event:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_event__coll__graph.png" border="0" usemap="#a_event_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="a_event_coll__map" id="a_event_coll__map">
 <area shape="rect" title="Мероприятие с названием и датой проведения." alt="" coords="5,102,61,128"/>
-<area shape="rect" href="class_date.html" title="Класс для хранения и обработки календарной даты." alt="" coords="8,5,58,31"/>
+<area shape="rect" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год." alt="" coords="8,5,58,31"/>
 <area shape="poly" title=" " alt="" coords="35,45,36,102,30,101,31,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -141,16 +143,12 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Мероприятие с названием и датой проведения. </p>
-<p>Класс содержит объект <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>. Это пример композиции: объект одного класса хранится в качестве поля другого класса. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa08176b2cc80169e7e59498f2c86fe47" name="aa08176b2cc80169e7e59498f2c86fe47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa08176b2cc80169e7e59498f2c86fe47">&#9670;&#160;</a></span>Event()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Event::Event </td>
@@ -163,14 +161,10 @@ Public Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>date</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Создаёт мероприятие. </p>
+<p>Создаёт мероприятие с заданным названием и датой.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Название мероприятия. </td></tr>
@@ -187,9 +181,6 @@ Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Event::print </td>
@@ -198,14 +189,10 @@ Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Выводит название, дату и день недели мероприятия. </p>
+<p>Выводит название мероприятия, дату и день недели. </p>
 
 </div>
 </div>
@@ -242,8 +229,9 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="main_8cpp.html">main.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_date_8h_source.html">Date.h</a></li>
+<li><a class="el" href="_date_8cpp.html">Date.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

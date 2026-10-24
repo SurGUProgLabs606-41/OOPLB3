@@ -112,19 +112,21 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_date.htm
 </div><!--header-->
 <div class="contents">
 
-<p>Класс для хранения и обработки календарной даты.  
+<p>Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_date_8h_source.html">Date.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e59ed4ba66eec61c27460c5d09fa1bd" id="r_a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4e59ed4ba66eec61c27460c5d09fa1bd">Date</a> ()</td></tr>
-<tr class="memdesc:a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию.  <br /></td></tr>
+<tr class="memdesc:a4e59ed4ba66eec61c27460c5d09fa1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию: 01.01.2000.  <br /></td></tr>
 <tr class="memitem:a70885a0e86710f7e13ed8ddae2ad5f95" id="r_a70885a0e86710f7e13ed8ddae2ad5f95"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a70885a0e86710f7e13ed8ddae2ad5f95">Date</a> (int day, int month=1, int year=2000)</td></tr>
-<tr class="memdesc:a70885a0e86710f7e13ed8ddae2ad5f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметризованный конструктор.  <br /></td></tr>
+<tr class="memdesc:a70885a0e86710f7e13ed8ddae2ad5f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Параметризованный конструктор; explicit запрещает неявное преобразование int в <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.  <br /></td></tr>
 <tr class="memitem:a521cf49a1242108fb010f77e2a2458fe" id="r_a521cf49a1242108fb010f77e2a2458fe"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a521cf49a1242108fb010f77e2a2458fe">Date</a> (const <a class="el" href="class_date.html">Date</a> &amp;other)</td></tr>
 <tr class="memdesc:a521cf49a1242108fb010f77e2a2458fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования.  <br /></td></tr>
 <tr class="memitem:ade4b469433b7966cc034cbcc6799233b" id="r_ade4b469433b7966cc034cbcc6799233b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ade4b469433b7966cc034cbcc6799233b">~Date</a> ()</td></tr>
-<tr class="memdesc:ade4b469433b7966cc034cbcc6799233b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>.  <br /></td></tr>
+<tr class="memdesc:ade4b469433b7966cc034cbcc6799233b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.  <br /></td></tr>
 <tr class="memitem:aa3b521a999bdfafb51a934f01f8f6c9c" id="r_aa3b521a999bdfafb51a934f01f8f6c9c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa3b521a999bdfafb51a934f01f8f6c9c">print</a> () const</td></tr>
 <tr class="memdesc:aa3b521a999bdfafb51a934f01f8f6c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит дату в формате ДД.ММ.ГГГГ.  <br /></td></tr>
 <tr class="memitem:a0f253815240e70f4c39cb93cc68bd3f4" id="r_a0f253815240e70f4c39cb93cc68bd3f4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0f253815240e70f4c39cb93cc68bd3f4">getDay</a> () const</td></tr>
@@ -136,19 +138,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac85bac326e910572f1d1bd7aaea6aad" id="r_aac85bac326e910572f1d1bd7aaea6aad"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aac85bac326e910572f1d1bd7aaea6aad">getAccessCount</a> () const</td></tr>
 <tr class="memdesc:aac85bac326e910572f1d1bd7aaea6aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество обращений к объекту.  <br /></td></tr>
 <tr class="memitem:ab64d06478b955af2d63862a601ac9b00" id="r_ab64d06478b955af2d63862a601ac9b00"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#ab64d06478b955af2d63862a601ac9b00">getWeekDay</a> () const</td></tr>
-<tr class="memdesc:ab64d06478b955af2d63862a601ac9b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет день недели для даты.  <br /></td></tr>
+<tr class="memdesc:ab64d06478b955af2d63862a601ac9b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Определяет день недели.  <br /></td></tr>
 <tr class="memitem:aa507b1b99767eea29296b4907ef81755" id="r_aa507b1b99767eea29296b4907ef81755"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aa507b1b99767eea29296b4907ef81755">operator+=</a> (int days)</td></tr>
 <tr class="memdesc:aa507b1b99767eea29296b4907ef81755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прибавляет к дате заданное количество дней.  <br /></td></tr>
 <tr class="memitem:a6bc50f3ce739cdb784b565f57632cc58" id="r_a6bc50f3ce739cdb784b565f57632cc58"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a6bc50f3ce739cdb784b565f57632cc58">operator-=</a> (int days)</td></tr>
 <tr class="memdesc:a6bc50f3ce739cdb784b565f57632cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычитает из даты заданное количество дней.  <br /></td></tr>
 <tr class="memitem:a3993e645e3408e07d12b70e58f36630c" id="r_a3993e645e3408e07d12b70e58f36630c"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3993e645e3408e07d12b70e58f36630c">operator++</a> ()</td></tr>
-<tr class="memdesc:a3993e645e3408e07d12b70e58f36630c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префиксный инкремент даты.  <br /></td></tr>
+<tr class="memdesc:a3993e645e3408e07d12b70e58f36630c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префиксный инкремент.  <br /></td></tr>
 <tr class="memitem:a63f7060a7a7997e289e5e885f84557e5" id="r_a63f7060a7a7997e289e5e885f84557e5"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#a63f7060a7a7997e289e5e885f84557e5">operator++</a> (int)</td></tr>
-<tr class="memdesc:a63f7060a7a7997e289e5e885f84557e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Постфиксный инкремент даты.  <br /></td></tr>
+<tr class="memdesc:a63f7060a7a7997e289e5e885f84557e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Постфиксный инкремент.  <br /></td></tr>
 <tr class="memitem:af94a19bebfa4018745039275d9eab42e" id="r_af94a19bebfa4018745039275d9eab42e"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af94a19bebfa4018745039275d9eab42e">operator--</a> ()</td></tr>
-<tr class="memdesc:af94a19bebfa4018745039275d9eab42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префиксный декремент даты.  <br /></td></tr>
+<tr class="memdesc:af94a19bebfa4018745039275d9eab42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префиксный декремент.  <br /></td></tr>
 <tr class="memitem:ac2237a5f9f832bb521fe8f299a47db95" id="r_ac2237a5f9f832bb521fe8f299a47db95"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac2237a5f9f832bb521fe8f299a47db95">operator--</a> (int)</td></tr>
-<tr class="memdesc:ac2237a5f9f832bb521fe8f299a47db95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Постфиксный декремент даты.  <br /></td></tr>
+<tr class="memdesc:ac2237a5f9f832bb521fe8f299a47db95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Постфиксный декремент.  <br /></td></tr>
 <tr class="memitem:ab1a8b4ddb4b501d4d0fbd930e4576c8f" id="r_ab1a8b4ddb4b501d4d0fbd930e4576c8f"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab1a8b4ddb4b501d4d0fbd930e4576c8f">operator*=</a> (int value)</td></tr>
 <tr class="memdesc:ab1a8b4ddb4b501d4d0fbd930e4576c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножает порядковый номер даты на число.  <br /></td></tr>
 <tr class="memitem:a418925e3cf6491db1832b56ef1b7e8d0" id="r_a418925e3cf6491db1832b56ef1b7e8d0"><td class="memItemLeft"><a class="el" href="class_date.html">Date</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a418925e3cf6491db1832b56ef1b7e8d0">operator/=</a> (int value)</td></tr>
@@ -160,18 +162,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2943ef426612046e084e2d885c5fed4" id="r_ab2943ef426612046e084e2d885c5fed4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab2943ef426612046e084e2d885c5fed4">operator&gt;</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
 <tr class="memdesc:ab2943ef426612046e084e2d885c5fed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что текущая дата позже другой.  <br /></td></tr>
 <tr class="memitem:aff6e110a1bba92225dfa094e904c003e" id="r_aff6e110a1bba92225dfa094e904c003e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aff6e110a1bba92225dfa094e904c003e">operator&lt;=</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="memdesc:aff6e110a1bba92225dfa094e904c003e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что дата раньше или совпадает с другой.  <br /></td></tr>
+<tr class="memdesc:aff6e110a1bba92225dfa094e904c003e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что текущая дата раньше или равна другой.  <br /></td></tr>
 <tr class="memitem:a93d583e1a8eae7cc606a6fdbfc3c5c58" id="r_a93d583e1a8eae7cc606a6fdbfc3c5c58"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a93d583e1a8eae7cc606a6fdbfc3c5c58">operator&gt;=</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="memdesc:a93d583e1a8eae7cc606a6fdbfc3c5c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что дата позже или совпадает с другой.  <br /></td></tr>
+<tr class="memdesc:a93d583e1a8eae7cc606a6fdbfc3c5c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, что текущая дата позже или равна другой.  <br /></td></tr>
 <tr class="memitem:a3b103cc8257d3055aedb519fff343503" id="r_a3b103cc8257d3055aedb519fff343503"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3b103cc8257d3055aedb519fff343503">operator==</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="memdesc:a3b103cc8257d3055aedb519fff343503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет равенство дат.  <br /></td></tr>
+<tr class="memdesc:a3b103cc8257d3055aedb519fff343503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет равенство двух дат.  <br /></td></tr>
 <tr class="memitem:af47f5313d22ea8a75eb9270d433abd6b" id="r_af47f5313d22ea8a75eb9270d433abd6b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af47f5313d22ea8a75eb9270d433abd6b">operator!=</a> (const <a class="el" href="class_date.html">Date</a> &amp;other) const</td></tr>
-<tr class="memdesc:af47f5313d22ea8a75eb9270d433abd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет неравенство дат.  <br /></td></tr>
+<tr class="memdesc:af47f5313d22ea8a75eb9270d433abd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет неравенство двух дат.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad842c82a596bf4d1494ece1919cd83ae" id="r_ad842c82a596bf4d1494ece1919cd83ae"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ad842c82a596bf4d1494ece1919cd83ae">getObjectCount</a> ()</td></tr>
-<tr class="memdesc:ad842c82a596bf4d1494ece1919cd83ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>.  <br /></td></tr>
+<tr class="memitem:accd3eef0e8db8ee23e8773d103ea8f90" id="r_accd3eef0e8db8ee23e8773d103ea8f90"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#accd3eef0e8db8ee23e8773d103ea8f90">getObjectCount</a> ()</td></tr>
+<tr class="memdesc:accd3eef0e8db8ee23e8773d103ea8f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -185,17 +187,13 @@ Friends</h2></td></tr>
 <tr class="memdesc:ac0501aa1fe2457b4f89525611f9e9cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Делит порядковый номер даты.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс для хранения и обработки календарной даты. </p>
-<p>Дата хранится в трёх полях: день, месяц и год. Для арифметических операций дата преобразуется в порядковый номер дня, после чего результат переводится обратно в дату. </p>
+<div class="textblock"><p>Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e59ed4ba66eec61c27460c5d09fa1bd" name="a4e59ed4ba66eec61c27460c5d09fa1bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e59ed4ba66eec61c27460c5d09fa1bd">&#9670;&#160;</a></span>Date() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Date::Date </td>
@@ -204,15 +202,10 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Конструктор по умолчанию. </p>
-<p>[Задание 1] Создаёт дату 01.01.2000. Инициализирует счётчик обращений и увеличивает objectCount. </p>
+<p>Конструктор по умолчанию: 01.01.2000. </p>
+<p>Создаёт дату по умолчанию — 01.01.2000. </p>
 
 </div>
 </div>
@@ -243,27 +236,27 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Параметризованный конструктор. </p>
+<p>Параметризованный конструктор; explicit запрещает неявное преобразование int в <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>. </p>
+<p>Создаёт дату с указанными днём, месяцем и годом.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">day</td><td>День месяца. </td></tr>
-    <tr><td class="paramname">month</td><td>Месяц; по умолчанию 1. </td></tr>
-    <tr><td class="paramname">year</td><td>Год; по умолчанию 2000. </td></tr>
+    <tr><td class="paramname">month</td><td>Номер месяца. </td></tr>
+    <tr><td class="paramname">year</td><td>Год. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>Если дата некорректна.</td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>Если передана некорректная дата. </td></tr>
   </table>
   </dd>
 </dl>
-<p>[Задания 1, 5, 9] explicit запрещает неявное преобразование int в <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>. Например, <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> d(15) разрешено, а <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> d = 15 — запрещено, поскольку это неявное преобразование. </p>
 
 </div>
 </div>
@@ -272,9 +265,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Date::Date </td>
@@ -283,21 +273,16 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Конструктор копирования. </p>
+<p>Создаёт копию другой даты.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Объект, из которого копируется дата.</td></tr>
+    <tr><td class="paramname">other</td><td>Объект, который копируется. </td></tr>
   </table>
   </dd>
 </dl>
-<p>[Задание 1] Создаёт новый объект с такими же днём, месяцем и годом. Счётчик обращений начинает с нуля. </p>
 
 </div>
 </div>
@@ -306,9 +291,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Date::~Date </td>
@@ -317,15 +299,10 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Деструктор класса <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>. </p>
-<p>[Задание 7] Пользовательский деструктор уменьшает количество существующих объектов. Вызывается автоматически при завершении времени жизни объекта. </p>
+<p>Деструктор класса <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>. </p>
+<p>Уменьшает счётчик существующих объектов при уничтожении. </p>
 
 </div>
 </div>
@@ -335,9 +312,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::getAccessCount </td>
@@ -346,16 +320,10 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Возвращает количество обращений к объекту. </p>
-<dl class="section return"><dt>Returns</dt><dd>Текущее значение accessCount.</dd></dl>
-<p>Сам счётчик при вызове метода не увеличивается. </p>
+<dl class="section return"><dt>Returns</dt><dd>Счётчик обращений. </dd></dl>
 
 </div>
 </div>
@@ -364,9 +332,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::getDay </td>
@@ -375,16 +340,10 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Возвращает день месяца. </p>
-<dl class="section return"><dt>Returns</dt><dd>День месяца.</dd></dl>
-<p>Увеличивает счётчик обращений. </p>
+<dl class="section return"><dt>Returns</dt><dd>День месяца. </dd></dl>
 
 </div>
 </div>
@@ -393,9 +352,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::getMonth </td>
@@ -404,21 +360,15 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Возвращает номер месяца. </p>
-<dl class="section return"><dt>Returns</dt><dd>Номер месяца.</dd></dl>
-<p>Увеличивает счётчик обращений. </p>
+<dl class="section return"><dt>Returns</dt><dd>Номер месяца. </dd></dl>
 
 </div>
 </div>
-<a id="ad842c82a596bf4d1494ece1919cd83ae" name="ad842c82a596bf4d1494ece1919cd83ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad842c82a596bf4d1494ece1919cd83ae">&#9670;&#160;</a></span>getObjectCount()</h2>
+<a id="accd3eef0e8db8ee23e8773d103ea8f90" name="accd3eef0e8db8ee23e8773d103ea8f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd3eef0e8db8ee23e8773d103ea8f90">&#9670;&#160;</a></span>getObjectCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,14 +385,14 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Возвращает количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>Значение статического счётчика.</dd></dl>
-<p>[Задание 6] Метод static можно вызвать без объекта: <a class="el" href="#ad842c82a596bf4d1494ece1919cd83ae" title="Возвращает количество существующих объектов Date.">Date::getObjectCount()</a>. </p>
+<p>Возвращает количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>. </p>
+<p>Возвращает число созданных и ещё не уничтоженных объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>Количество объектов. </dd></dl>
 
 </div>
 </div>
@@ -451,9 +401,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string Date::getWeekDay </td>
@@ -462,16 +409,11 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Определяет день недели для даты. </p>
-<dl class="section return"><dt>Returns</dt><dd>Название дня недели на русском языке.</dd></dl>
-<p>Порядковый номер преобразуется в индекс массива от 0 до 6. В используемой системе 01.01.0001 соответствует понедельнику. </p>
+<p>Определяет день недели. </p>
+<p>Определяет день недели для текущей даты.</p>
+<dl class="section return"><dt>Returns</dt><dd>Название дня недели. </dd></dl>
 
 </div>
 </div>
@@ -480,9 +422,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Date::getYear </td>
@@ -491,16 +430,10 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Возвращает год. </p>
-<dl class="section return"><dt>Returns</dt><dd>Год.</dd></dl>
-<p>Увеличивает счётчик обращений. </p>
+<dl class="section return"><dt>Returns</dt><dd>Год. </dd></dl>
 
 </div>
 </div>
@@ -509,9 +442,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator!= </td>
@@ -520,21 +450,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Проверяет неравенство дат. </p>
+<p>Проверяет неравенство двух дат. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если даты различаются.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если даты различаются; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения !=. </p>
 
 </div>
@@ -544,9 +469,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator*= </td>
@@ -555,11 +477,6 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Умножает порядковый номер даты на число. </p>
@@ -569,8 +486,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на текущий объект.</dd></dl>
-<p>[Задание 3] Оператор *= изменяет дату. Это демонстрационная арифметическая операция, а не обычное календарное умножение. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 
 </div>
 </div>
@@ -579,9 +495,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator++ </td>
@@ -590,16 +503,11 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Префиксный инкремент даты. </p>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект.</dd></dl>
-<p>[Задание 2] ++date переводит дату на следующий день и возвращает уже изменённый объект. </p>
+<p>Префиксный инкремент. </p>
+<p>Выполняет префиксный инкремент даты.</p>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 
 </div>
 </div>
@@ -608,9 +516,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> Date::operator++ </td>
@@ -619,16 +524,11 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Постфиксный инкремент даты. </p>
-<dl class="section return"><dt>Returns</dt><dd>Копия даты до увеличения.</dd></dl>
-<p>[Задание 2] date++ сохраняет старую дату, увеличивает текущую и возвращает сохранённую копию. Параметр int отличает постфиксную форму от префиксной. </p>
+<p>Постфиксный инкремент. </p>
+<p>Выполняет постфиксный инкремент даты.</p>
+<dl class="section return"><dt>Returns</dt><dd>Копия даты до изменения. </dd></dl>
 
 </div>
 </div>
@@ -637,9 +537,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator+= </td>
@@ -648,22 +545,17 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Прибавляет к дате заданное количество дней. </p>
+<p>Прибавляет указанное число дней к текущей дате.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">days</td><td>Количество прибавляемых дней. </td></tr>
+    <tr><td class="paramname">days</td><td>Количество дней. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на текущий объект.</dd></dl>
-<p>[Задание 3] Оператор += изменяет текущий объект. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 
 </div>
 </div>
@@ -672,9 +564,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long long Date::operator- </td>
@@ -683,11 +572,6 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Вычисляет разность двух дат в днях. </p>
@@ -697,8 +581,8 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Разность порядковых номеров в днях.</dd></dl>
-<p>[Задание 4] <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> - <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> возвращает число дней, тогда как <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> - int возвращает объект <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Разность порядковых номеров дат в днях.</dd></dl>
+<p><a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> - <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> возвращает число дней, тогда как <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> - int возвращает объект <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>. </p>
 
 </div>
 </div>
@@ -707,9 +591,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator-- </td>
@@ -718,16 +599,11 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Префиксный декремент даты. </p>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект.</dd></dl>
-<p>[Задание 2] &ndash;date переводит дату на предыдущий день. </p>
+<p>Префиксный декремент. </p>
+<p>Выполняет префиксный декремент даты.</p>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 
 </div>
 </div>
@@ -736,9 +612,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> Date::operator-- </td>
@@ -747,16 +620,11 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Постфиксный декремент даты. </p>
-<dl class="section return"><dt>Returns</dt><dd>Копия даты до уменьшения.</dd></dl>
-<p>[Задание 2] date&ndash; сохраняет старую дату, уменьшает текущую и возвращает сохранённую копию. </p>
+<p>Постфиксный декремент. </p>
+<p>Выполняет постфиксный декремент даты.</p>
+<dl class="section return"><dt>Returns</dt><dd>Копия даты до изменения. </dd></dl>
 
 </div>
 </div>
@@ -765,9 +633,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator-= </td>
@@ -776,22 +641,17 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Вычитает из даты заданное количество дней. </p>
+<p>Вычитает указанное число дней из текущей даты.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">days</td><td>Количество вычитаемых дней. </td></tr>
+    <tr><td class="paramname">days</td><td>Количество дней. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на текущий объект.</dd></dl>
-<p>[Задание 3] Оператор -= изменяет текущий объект. </p>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 
 </div>
 </div>
@@ -800,9 +660,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_date.html">Date</a> &amp; Date::operator/= </td>
@@ -811,11 +668,6 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Делит порядковый номер даты на число. </p>
@@ -825,14 +677,13 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ссылка на текущий объект. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Ссылка на изменённый объект. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>Если делитель равен нулю.</td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>При делении на ноль. </td></tr>
   </table>
   </dd>
 </dl>
-<p>[Задание 3] Оператор /= использует целочисленное деление. </p>
 
 </div>
 </div>
@@ -841,9 +692,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&lt; </td>
@@ -852,21 +700,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Проверяет, что текущая дата раньше другой. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата раньше other.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата раньше other; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения &lt;. </p>
 
 </div>
@@ -876,9 +719,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&lt;= </td>
@@ -887,21 +727,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Проверяет, что дата раньше или совпадает с другой. </p>
+<p>Проверяет, что текущая дата раньше или равна другой. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата меньше или равна other.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата меньше или равна other; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения &lt;=. </p>
 
 </div>
@@ -911,9 +746,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator== </td>
@@ -922,21 +754,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Проверяет равенство дат. </p>
+<p>Проверяет равенство двух дат. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если даты совпадают.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если даты совпадают; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения ==. </p>
 
 </div>
@@ -946,9 +773,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&gt; </td>
@@ -957,21 +781,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Проверяет, что текущая дата позже другой. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата позже other.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата позже other; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения &gt;. </p>
 
 </div>
@@ -981,9 +800,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Date::operator&gt;= </td>
@@ -992,21 +808,16 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Проверяет, что дата позже или совпадает с другой. </p>
+<p>Проверяет, что текущая дата позже или равна другой. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>Другая дата. </td></tr>
+    <tr><td class="paramname">other</td><td>Другая дата для сравнения. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата больше или равна other.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, если текущая дата больше или равна other; иначе false.</dd></dl>
 <p>[Задание 4] Оператор сравнения &gt;=. </p>
 
 </div>
@@ -1016,9 +827,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Date::print </td>
@@ -1027,15 +835,9 @@ Friends</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Выводит дату в формате ДД.ММ.ГГГГ. </p>
-<p>Увеличивает счётчик обращений. Метод const не меняет саму дату, а изменение accessCount разрешено благодаря mutable. </p>
 
 </div>
 </div>
@@ -1070,13 +872,12 @@ Friends</h2></td></tr>
 <p>Умножает порядковый номер даты. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>Копия исходной даты. </td></tr>
+    <tr><td class="paramname">lhs</td><td>Исходная дата. </td></tr>
     <tr><td class="paramname">value</td><td>Множитель. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Новая дата.</dd></dl>
-<p>[Задание 4] Бинарный оператор * не изменяет исходную дату. </p>
+<dl class="section return"><dt>Returns</dt><dd>Новая дата. </dd></dl>
 
 </div>
 </div>
@@ -1110,13 +911,12 @@ Friends</h2></td></tr>
 <p>Прибавляет дни и возвращает новую дату. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>Копия исходной даты. </td></tr>
-    <tr><td class="paramname">days</td><td>Количество прибавляемых дней. </td></tr>
+    <tr><td class="paramname">lhs</td><td>Исходная дата. </td></tr>
+    <tr><td class="paramname">days</td><td>Число дней. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Новая дата.</dd></dl>
-<p>[Задание 4] Бинарный оператор + не изменяет исходный объект: он получает копию, изменяет её и возвращает результат. friend разрешает функции доступ к закрытым членам класса. </p>
+<dl class="section return"><dt>Returns</dt><dd>Новая дата. </dd></dl>
 
 </div>
 </div>
@@ -1150,13 +950,12 @@ Friends</h2></td></tr>
 <p>Вычитает дни и возвращает новую дату. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>Копия исходной даты. </td></tr>
-    <tr><td class="paramname">days</td><td>Количество вычитаемых дней. </td></tr>
+    <tr><td class="paramname">lhs</td><td>Исходная дата. </td></tr>
+    <tr><td class="paramname">days</td><td>Число дней. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Новая дата.</dd></dl>
-<p>[Задание 4] Бинарный оператор - для <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> и int. </p>
+<dl class="section return"><dt>Returns</dt><dd>Новая дата. </dd></dl>
 
 </div>
 </div>
@@ -1190,24 +989,18 @@ Friends</h2></td></tr>
 <p>Делит порядковый номер даты. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>Копия исходной даты. </td></tr>
+    <tr><td class="paramname">lhs</td><td>Исходная дата. </td></tr>
     <tr><td class="paramname">value</td><td>Делитель. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Новая дата. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>Если делитель равен нулю.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>[Задание 4] Бинарный оператор / не изменяет исходную дату. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="main_8cpp.html">main.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_date_8h_source.html">Date.h</a></li>
+<li><a class="el" href="_date_8cpp.html">Date.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

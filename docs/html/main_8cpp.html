@@ -112,59 +112,39 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp.html
 </div><!--header-->
 <div class="contents">
 
-<p>Лабораторная работа №3, вариант №7.  
+<p>Лабораторная работа №3, вариант №7. Демонстрация классов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> и <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;<a class="el" href="_date_8h_source.html">Date.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" loading="lazy" alt=""/></div>
 <map name="amain_8cpp" id="amain_8cpp">
-<area shape="rect" title="Лабораторная работа №3, вариант №7." alt="" coords="170,5,245,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,77,105"/>
-<area shape="poly" title=" " alt="" coords="180,34,84,75,82,70,178,29"/>
-<area shape="rect" title=" " alt="" coords="101,79,154,105"/>
-<area shape="poly" title=" " alt="" coords="197,31,154,71,151,67,192,32"/>
-<area shape="rect" title=" " alt="" coords="179,79,236,105"/>
-<area shape="poly" title=" " alt="" coords="210,29,210,65,205,62,206,33"/>
-<area shape="rect" title=" " alt="" coords="260,79,339,105"/>
-<area shape="poly" title=" " alt="" coords="224,29,275,70,270,69,222,34"/>
-<area shape="rect" title=" " alt="" coords="362,79,445,105"/>
-<area shape="poly" title=" " alt="" coords="241,29,359,73,354,74,240,34"/>
+<area shape="rect" title="Лабораторная работа №3, вариант №7. Демонстрация классов Date и Event." alt="" coords="124,5,198,31"/>
+<area shape="rect" title=" " alt="" coords="5,153,77,178"/>
+<area shape="poly" title=" " alt="" coords="140,33,115,54,87,81,68,110,53,140,49,137,63,107,83,77,111,50,144,29"/>
+<area shape="rect" title=" " alt="" coords="178,153,256,178"/>
+<area shape="poly" title=" " alt="" coords="167,29,210,138,204,138,164,33"/>
+<area shape="rect" title=" " alt="" coords="233,79,316,105"/>
+<area shape="poly" title=" " alt="" coords="181,29,245,70,240,71,180,34"/>
+<area shape="rect" href="_date_8h.html" title="Объявления классов Date и Event." alt="" coords="98,79,158,105"/>
+<area shape="poly" title=" " alt="" coords="157,29,142,66,138,63,154,33"/>
+<area shape="poly" title=" " alt="" coords="116,104,69,145,65,141,110,106"/>
+<area shape="poly" title=" " alt="" coords="144,103,193,142,187,143,142,108"/>
+<area shape="rect" title=" " alt="" coords="101,153,154,178"/>
+<area shape="poly" title=" " alt="" coords="129,103,130,138,125,136,126,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:Date" id="r_Date"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_date.html">Date</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для хранения и обработки календарной даты.  <a href="class_date.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Event" id="r_Event"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_event.html">Event</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мероприятие с названием и датой проведения.  <a href="class_event.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
-<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Демонстрирует возможности классов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> и <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Лабораторная работа №3, вариант №7. </p>
-<p>Программа демонстрирует классы <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> и <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>, конструкторы, деструктор, перегрузку операторов, explicit, mutable, статическое поле и обработку исключений.</p>
-<p>Выполненные задания:</p><ol type="1">
-<li>Три конструктора.</li>
-<li>Префиксные и постфиксные ++ и &ndash;.</li>
-<li>Операторы +=, -=, *=, /=.</li>
-<li>Бинарные арифметические операторы и сравнения.</li>
-<li>Использование explicit и mutable.</li>
-<li>Одно статическое поле.</li>
-<li>Пользовательский деструктор.</li>
-<li>Демонстрация операторов в <a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Демонстрирует возможности классов Date и Event.">main()</a>.</li>
-<li>Демонстрация запрета неявного преобразования.</li>
-<li>Изменение mutable-поля константного объекта. </li>
-</ol>
+<div class="textblock"><p>Лабораторная работа №3, вариант №7. Демонстрация классов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> и <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
@@ -180,14 +160,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Демонстрирует возможности классов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> и <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>. </p>
-<p>[Задание 8] Проверяется работа конструкторов, преобразований, унарных, арифметических и сравнительных операторов. [Задание 9] Демонстрируется запрет неявного преобразования с explicit. [Задание 10] Проверяется изменение mutable-поля const-объекта.</p>
-<dl class="section return"><dt>Returns</dt><dd>0 при успешном выполнении; 1 при обработанном исключении. </dd></dl>
 <p>[Задание 1] Демонстрация трёх конструкторов.</p>
-<p>d1 создаётся конструктором по умолчанию, d2 — параметризованным конструктором, d3 — конструктором копирования.</p>
+<p>d1 - создаётся конструктором по умолчанию, d2 — параметризованным конструктором, d3 — конструктором копирования.</p>
 <p>[Задания 5 и 9] Демонстрация explicit.</p>
-<p><a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> d4(15) разрешено: конструктор вызывается явно. <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a> d5 = 15 запрещено, поскольку explicit блокирует неявное преобразование int в <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>.</p>
+<p><a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> d4(15) разрешено: конструктор вызывается явно. <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a> d5 = 15 запрещено, поскольку explicit блокирует неявное преобразование int в <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.</p>
 <p>[Задание 2] Демонстрация ++ и &ndash;.</p>
 <p>Префиксная форма возвращает изменённую дату, постфиксная — копию даты до изменения.</p>
 <p>[Задание 3] Демонстрация +=, -=, *= и /=.</p>
@@ -196,10 +172,10 @@ Functions</h2></td></tr>
 <p>[Задание 4] Демонстрация операторов сравнения.</p>
 <p>[Задания 5 и 10] Демонстрация mutable у const-объекта.</p>
 <p>constDate нельзя изменять обычными операциями. Однако print(), getDay(), getMonth() и getYear() увеличивают accessCount, потому что поле объявлено mutable.</p>
-<p>Создаёт список мероприятий и выводит расписание.</p>
-<p>Каждый <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a> содержит название и объект <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>.</p>
+<p>Создаёт массив мероприятий и выводит расписание.</p>
+<p>Каждый <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a> содержит название и объект <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.</p>
 <p>Подсчитывает мероприятия за октябрь и за весь 2026 год.</p>
-<p>[Задание 6] Выводит количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты.">Date</a>.</p>
+<p>[Задание 6] Выводит количество существующих объектов <a class="el" href="class_date.html" title="Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.">Date</a>.</p>
 <p>Учитываются объекты, которые существуют в этой точке программы, включая поля date объектов <a class="el" href="class_event.html" title="Мероприятие с названием и датой проведения.">Event</a>.</p>
 <p>Обрабатывает исключения, унаследованные от std::exception. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

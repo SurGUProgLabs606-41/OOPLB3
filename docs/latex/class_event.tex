@@ -7,8 +7,11 @@
 
 
 
-Collaboration diagram for Event:
-\nopagebreak
+{\ttfamily \+\#include $<$Date.\+h$>$}
+
+
+
+Collaboration diagram for Event:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,8 +37,6 @@ string \doxymbox{\hyperlink{class_event_a2260aa14c4dfb50ad5db1dd71ece65eb}{name}
 \doxysubsection{Detailed Description}
 Мероприятие с названием и датой проведения. 
 
-Класс содержит объект \doxylink{class_date}{Date}. Это пример композиции: объект одного класса хранится в качестве поля другого класса. 
-
 \label{class_event_doc-constructors}
 \Hypertarget{class_event_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -43,11 +44,13 @@ string \doxymbox{\hyperlink{class_event_a2260aa14c4dfb50ad5db1dd71ece65eb}{name}
 \index{Event@{Event}!Event@{Event}}
 \doxysubsubsection{\texorpdfstring{Event()}{Event()}}
 {\footnotesize\ttfamily \label{class_event_aa08176b2cc80169e7e59498f2c86fe47} 
-Event::\+\+Event (\begin{DoxyParamCaption}\item[{const string \&}]{name}{, }\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Event::\+\+Event (\begin{DoxyParamCaption}\item[{const string \&}]{name}{, }\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{date}{}\end{DoxyParamCaption})}
 
 
 
 Создаёт мероприятие. 
+
+Создаёт мероприятие с заданным названием и датой.
 
 
 \begin{DoxyParams}{Parameters}
@@ -65,13 +68,13 @@ Event::\+\+Event (\begin{DoxyParamCaption}\item[{const string \&}]{name}{, }\ite
 \index{print@{print}!Event@{Event}}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily \label{class_event_ab1b48a39a41a7fc92a25617adcf68aa8} 
-void Event::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+void Event::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Выводит название, дату и день недели мероприятия. 
 
-
+Выводит название мероприятия, дату и день недели. 
 
 \label{class_event_doc-variable-members}
 \Hypertarget{class_event_doc-variable-members}
@@ -98,6 +101,7 @@ string Event::\+name}
 
 
 
-The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
+\doxymbox{\hyperlink{_date_8h}{Date.\+h}}\item 
+\doxymbox{\hyperlink{_date_8cpp}{Date.\+cpp}}\end{DoxyCompactItemize}

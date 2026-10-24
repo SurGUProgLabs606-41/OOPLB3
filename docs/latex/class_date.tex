@@ -2,16 +2,20 @@
 \hypertarget{class_date}{}\label{class_date}\index{Date@{Date}}
 
 
-Класс для хранения и обработки календарной даты.  
+Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год.  
 
+
+
+
+{\ttfamily \+\#include $<$Date.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
-\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию: 01.\+01.\+2000. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date_a70885a0e86710f7e13ed8ddae2ad5f95}{Date}} (int day, int month=1, int year=2000)
-\begin{DoxyCompactList}\small\item\em Параметризованный конструктор. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Параметризованный конструктор; explicit запрещает неявное преобразование int в \doxylink{class_date}{Date}. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date_a521cf49a1242108fb010f77e2a2458fe}{Date}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other)
 \begin{DoxyCompactList}\small\item\em Конструктор копирования. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date_ade4b469433b7966cc034cbcc6799233b}{\texorpdfstring{$\sim$}{\string~}\+Date}} ()
@@ -27,19 +31,19 @@ int \doxymbox{\hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year
 int \doxymbox{\hyperlink{class_date_aac85bac326e910572f1d1bd7aaea6aad}{get\+Access\+Count}} () const
 \begin{DoxyCompactList}\small\item\em Возвращает количество обращений к объекту. \end{DoxyCompactList}\item 
 string \doxymbox{\hyperlink{class_date_ab64d06478b955af2d63862a601ac9b00}{get\+Week\+Day}} () const
-\begin{DoxyCompactList}\small\item\em Определяет день недели для даты. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Определяет день недели. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_aa507b1b99767eea29296b4907ef81755}{operator+=}} (int days)
 \begin{DoxyCompactList}\small\item\em Прибавляет к дате заданное количество дней. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_a6bc50f3ce739cdb784b565f57632cc58}{operator-\/=}} (int days)
 \begin{DoxyCompactList}\small\item\em Вычитает из даты заданное количество дней. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_a3993e645e3408e07d12b70e58f36630c}{operator++}} ()
-\begin{DoxyCompactList}\small\item\em Префиксный инкремент даты. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Префиксный инкремент. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{class_date_a63f7060a7a7997e289e5e885f84557e5}{operator++}} (int)
-\begin{DoxyCompactList}\small\item\em Постфиксный инкремент даты. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Постфиксный инкремент. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_af94a19bebfa4018745039275d9eab42e}{operator-\/-\/}} ()
-\begin{DoxyCompactList}\small\item\em Префиксный декремент даты. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Префиксный декремент. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \doxymbox{\hyperlink{class_date_ac2237a5f9f832bb521fe8f299a47db95}{operator-\/-\/}} (int)
-\begin{DoxyCompactList}\small\item\em Постфиксный декремент даты. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Постфиксный декремент. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_ab1a8b4ddb4b501d4d0fbd930e4576c8f}{operator\texorpdfstring{$\ast$}{*}=}} (int value)
 \begin{DoxyCompactList}\small\item\em Умножает порядковый номер даты на число. \end{DoxyCompactList}\item 
 \doxymbox{\hyperlink{class_date}{Date}} \& \doxymbox{\hyperlink{class_date_a418925e3cf6491db1832b56ef1b7e8d0}{operator/\+=}} (int value)
@@ -51,17 +55,17 @@ bool \doxymbox{\hyperlink{class_date_a56469dbfb6a0c32326330796cb316881}{operator
 bool \doxymbox{\hyperlink{class_date_ab2943ef426612046e084e2d885c5fed4}{operator$>$}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other) const
 \begin{DoxyCompactList}\small\item\em Проверяет, что текущая дата позже другой. \end{DoxyCompactList}\item 
 bool \doxymbox{\hyperlink{class_date_aff6e110a1bba92225dfa094e904c003e}{operator$<$=}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other) const
-\begin{DoxyCompactList}\small\item\em Проверяет, что дата раньше или совпадает с другой. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Проверяет, что текущая дата раньше или равна другой. \end{DoxyCompactList}\item 
 bool \doxymbox{\hyperlink{class_date_a93d583e1a8eae7cc606a6fdbfc3c5c58}{operator$>$=}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other) const
-\begin{DoxyCompactList}\small\item\em Проверяет, что дата позже или совпадает с другой. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Проверяет, что текущая дата позже или равна другой. \end{DoxyCompactList}\item 
 bool \doxymbox{\hyperlink{class_date_a3b103cc8257d3055aedb519fff343503}{operator==}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other) const
-\begin{DoxyCompactList}\small\item\em Проверяет равенство дат. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Проверяет равенство двух дат. \end{DoxyCompactList}\item 
 bool \doxymbox{\hyperlink{class_date_af47f5313d22ea8a75eb9270d433abd6b}{operator!=}} (const \doxymbox{\hyperlink{class_date}{Date}} \&other) const
-\begin{DoxyCompactList}\small\item\em Проверяет неравенство дат. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Проверяет неравенство двух дат. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static int \doxymbox{\hyperlink{class_date_ad842c82a596bf4d1494ece1919cd83ae}{get\+Object\+Count}} ()
+static int \doxymbox{\hyperlink{class_date_accd3eef0e8db8ee23e8773d103ea8f90}{get\+Object\+Count}} ()
 \begin{DoxyCompactList}\small\item\em Возвращает количество существующих объектов \doxylink{class_date}{Date}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -77,9 +81,7 @@ static int \doxymbox{\hyperlink{class_date_ad842c82a596bf4d1494ece1919cd83ae}{ge
 
 
 \doxysubsection{Detailed Description}
-Класс для хранения и обработки календарной даты. 
-
-Дата хранится в трёх полях: день, месяц и год. Для арифметических операций дата преобразуется в порядковый номер дня, после чего результат переводится обратно в дату. 
+Класс для хранения и обработки календарной даты. Дата хранится в полях день, месяц и год. 
 
 \label{class_date_doc-constructors}
 \Hypertarget{class_date_doc-constructors}
@@ -88,62 +90,66 @@ static int \doxymbox{\hyperlink{class_date_ad842c82a596bf4d1494ece1919cd83ae}{ge
 \index{Date@{Date}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd} 
-Date::\+\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Date::\+\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Конструктор по умолчанию. 
+Конструктор по умолчанию: 01.\+01.\+2000. 
 
-\+[Задание 1] Создаёт дату 01.\+01.\+2000. Инициализирует счётчик обращений и увеличивает object\+Count. \Hypertarget{class_date_a70885a0e86710f7e13ed8ddae2ad5f95}\index{Date@{Date}!Date@{Date}}
+Создаёт дату по умолчанию — 01.\+01.\+2000. \Hypertarget{class_date_a70885a0e86710f7e13ed8ddae2ad5f95}\index{Date@{Date}!Date@{Date}}
 \index{Date@{Date}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily \label{class_date_a70885a0e86710f7e13ed8ddae2ad5f95} 
-Date::\+\+Date (\begin{DoxyParamCaption}\item[{int}]{day}{, }\item[{int}]{month}{ = {\ttfamily 1}, }\item[{int}]{year}{ = {\ttfamily 2000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+Date::\+\+Date (\begin{DoxyParamCaption}\item[{int}]{day}{, }\item[{int}]{month}{ = {\ttfamily 1}, }\item[{int}]{year}{ = {\ttfamily 2000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Параметризованный конструктор. 
+Параметризованный конструктор; explicit запрещает неявное преобразование int в \doxylink{class_date}{Date}. 
+
+Создаёт дату с указанными днём, месяцем и годом.
 
 
 \begin{DoxyParams}{Parameters}
 {\em day} & День месяца. \\
 \hline
-{\em month} & Месяц; по умолчанию 1. \\
+{\em month} & Номер месяца. \\
 \hline
-{\em year} & Год; по умолчанию 2000. \\
+{\em year} & Год. \\
 \hline
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em invalid\+\_\+argument} & Если дата некорректна.\\
+{\em invalid\+\_\+argument} & Если передана некорректная дата. \\
 \hline
 \end{DoxyExceptions}
-\+[Задания 1, 5, 9] explicit запрещает неявное преобразование int в \doxylink{class_date}{Date}. Например, \doxylink{class_date}{Date} d(15) разрешено, а \doxylink{class_date}{Date} d = 15 — запрещено, поскольку это неявное преобразование. \Hypertarget{class_date_a521cf49a1242108fb010f77e2a2458fe}\index{Date@{Date}!Date@{Date}}
+\Hypertarget{class_date_a521cf49a1242108fb010f77e2a2458fe}\index{Date@{Date}!Date@{Date}}
 \index{Date@{Date}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{class_date_a521cf49a1242108fb010f77e2a2458fe} 
-Date::\+\+Date (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Date::\+\+Date (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption})}
 
 
 
 Конструктор копирования. 
 
+Создаёт копию другой даты.
+
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Объект, из которого копируется дата.\\
+{\em other} & Объект, который копируется. \\
 \hline
 \end{DoxyParams}
-\+[Задание 1] Создаёт новый объект с такими же днём, месяцем и годом. Счётчик обращений начинает с нуля. \Hypertarget{class_date_ade4b469433b7966cc034cbcc6799233b}\index{Date@{Date}!````~Date@{\texorpdfstring{$\sim$}{\string~}Date}}
+\Hypertarget{class_date_ade4b469433b7966cc034cbcc6799233b}\index{Date@{Date}!````~Date@{\texorpdfstring{$\sim$}{\string~}Date}}
 \index{````~Date@{\texorpdfstring{$\sim$}{\string~}Date}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Date()}{\string~Date()}}
 {\footnotesize\ttfamily \label{class_date_ade4b469433b7966cc034cbcc6799233b} 
-Date::\+\texorpdfstring{$\sim$}{\string~}\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Date::\+\texorpdfstring{$\sim$}{\string~}\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Деструктор класса \doxylink{class_date}{Date}. 
 
-\+[Задание 7] Пользовательский деструктор уменьшает количество существующих объектов. Вызывается автоматически при завершении времени жизни объекта. 
+Уменьшает счётчик существующих объектов при уничтожении. 
 
 \label{class_date_doc-func-members}
 \Hypertarget{class_date_doc-func-members}
@@ -152,103 +158,107 @@ Date::\+\texorpdfstring{$\sim$}{\string~}\+Date (\begin{DoxyParamCaption}{}{}\en
 \index{getAccessCount@{getAccessCount}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getAccessCount()}{getAccessCount()}}
 {\footnotesize\ttfamily \label{class_date_aac85bac326e910572f1d1bd7aaea6aad} 
-int Date::\+get\+Access\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int Date::\+get\+Access\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Возвращает количество обращений к объекту. 
 
 \begin{DoxyReturn}{Returns}
-Текущее значение access\+Count.
+Счётчик обращений. 
 \end{DoxyReturn}
-Сам счётчик при вызове метода не увеличивается. \Hypertarget{class_date_a0f253815240e70f4c39cb93cc68bd3f4}\index{Date@{Date}!getDay@{getDay}}
+\Hypertarget{class_date_a0f253815240e70f4c39cb93cc68bd3f4}\index{Date@{Date}!getDay@{getDay}}
 \index{getDay@{getDay}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
 {\footnotesize\ttfamily \label{class_date_a0f253815240e70f4c39cb93cc68bd3f4} 
-int Date::\+get\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int Date::\+get\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Возвращает день месяца. 
 
 \begin{DoxyReturn}{Returns}
-День месяца.
+День месяца. 
 \end{DoxyReturn}
-Увеличивает счётчик обращений. \Hypertarget{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}\index{Date@{Date}!getMonth@{getMonth}}
+\Hypertarget{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}\index{Date@{Date}!getMonth@{getMonth}}
 \index{getMonth@{getMonth}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
 {\footnotesize\ttfamily \label{class_date_a332f6e3a2f6a40d73742b6dab7be0f64} 
-int Date::\+get\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int Date::\+get\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Возвращает номер месяца. 
 
 \begin{DoxyReturn}{Returns}
-Номер месяца.
+Номер месяца. 
 \end{DoxyReturn}
-Увеличивает счётчик обращений. \Hypertarget{class_date_ad842c82a596bf4d1494ece1919cd83ae}\index{Date@{Date}!getObjectCount@{getObjectCount}}
+\Hypertarget{class_date_accd3eef0e8db8ee23e8773d103ea8f90}\index{Date@{Date}!getObjectCount@{getObjectCount}}
 \index{getObjectCount@{getObjectCount}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getObjectCount()}{getObjectCount()}}
-{\footnotesize\ttfamily \label{class_date_ad842c82a596bf4d1494ece1919cd83ae} 
-int Date::\+get\+Object\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily \label{class_date_accd3eef0e8db8ee23e8773d103ea8f90} 
+int Date::\+get\+Object\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Возвращает количество существующих объектов \doxylink{class_date}{Date}. 
 
+Возвращает число созданных и ещё не уничтоженных объектов \doxylink{class_date}{Date}.
+
 \begin{DoxyReturn}{Returns}
-Значение статического счётчика.
+Количество объектов. 
 \end{DoxyReturn}
-\+[Задание 6] Метод static можно вызвать без объекта: \doxylink{class_date_ad842c82a596bf4d1494ece1919cd83ae}{Date::\+get\+Object\+Count()}. \Hypertarget{class_date_ab64d06478b955af2d63862a601ac9b00}\index{Date@{Date}!getWeekDay@{getWeekDay}}
+\Hypertarget{class_date_ab64d06478b955af2d63862a601ac9b00}\index{Date@{Date}!getWeekDay@{getWeekDay}}
 \index{getWeekDay@{getWeekDay}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getWeekDay()}{getWeekDay()}}
 {\footnotesize\ttfamily \label{class_date_ab64d06478b955af2d63862a601ac9b00} 
-string Date::\+get\+Week\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+string Date::\+get\+Week\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
-Определяет день недели для даты. 
+Определяет день недели. 
+
+Определяет день недели для текущей даты.
 
 \begin{DoxyReturn}{Returns}
-Название дня недели на русском языке.
+Название дня недели. 
 \end{DoxyReturn}
-Порядковый номер преобразуется в индекс массива от 0 до 6. В используемой системе 01.\+01.\+0001 соответствует понедельнику. \Hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}\index{Date@{Date}!getYear@{getYear}}
+\Hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}\index{Date@{Date}!getYear@{getYear}}
 \index{getYear@{getYear}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
 {\footnotesize\ttfamily \label{class_date_a8b0869f34c2b38d108ab83ee2e770e5d} 
-int Date::\+get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+int Date::\+get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Возвращает год. 
 
 \begin{DoxyReturn}{Returns}
-Год.
+Год. 
 \end{DoxyReturn}
-Увеличивает счётчик обращений. \Hypertarget{class_date_af47f5313d22ea8a75eb9270d433abd6b}\index{Date@{Date}!operator"!=@{operator"!=}}
+\Hypertarget{class_date_af47f5313d22ea8a75eb9270d433abd6b}\index{Date@{Date}!operator"!=@{operator"!=}}
 \index{operator"!=@{operator"!=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
 {\footnotesize\ttfamily \label{class_date_af47f5313d22ea8a75eb9270d433abd6b} 
-bool Date::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator!= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
-Проверяет неравенство дат. 
+Проверяет неравенство двух дат. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если даты различаются.
+true, если даты различаются; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения !=. \Hypertarget{class_date_ab1a8b4ddb4b501d4d0fbd930e4576c8f}\index{Date@{Date}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
 \index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
 {\footnotesize\ttfamily \label{class_date_ab1a8b4ddb4b501d4d0fbd930e4576c8f} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})}
 
 
 
@@ -260,57 +270,63 @@ true, если даты различаются.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ссылка на текущий объект.
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
-\+[Задание 3] Оператор \texorpdfstring{$\ast$}{*}= изменяет дату. Это демонстрационная арифметическая операция, а не обычное календарное умножение. \Hypertarget{class_date_a3993e645e3408e07d12b70e58f36630c}\index{Date@{Date}!operator++@{operator++}}
+\Hypertarget{class_date_a3993e645e3408e07d12b70e58f36630c}\index{Date@{Date}!operator++@{operator++}}
 \index{operator++@{operator++}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_date_a3993e645e3408e07d12b70e58f36630c} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator++ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Префиксный инкремент даты. 
+Префиксный инкремент. 
+
+Выполняет префиксный инкремент даты.
 
 \begin{DoxyReturn}{Returns}
-Ссылка на изменённый объект.
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
-\+[Задание 2] ++date переводит дату на следующий день и возвращает уже изменённый объект. \Hypertarget{class_date_a63f7060a7a7997e289e5e885f84557e5}\index{Date@{Date}!operator++@{operator++}}
+\Hypertarget{class_date_a63f7060a7a7997e289e5e885f84557e5}\index{Date@{Date}!operator++@{operator++}}
 \index{operator++@{operator++}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_date_a63f7060a7a7997e289e5e885f84557e5} 
-\doxymbox{\hyperlink{class_date}{Date}} Date::\+operator++ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} Date::\+operator++ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})}
 
 
 
-Постфиксный инкремент даты. 
+Постфиксный инкремент. 
+
+Выполняет постфиксный инкремент даты.
 
 \begin{DoxyReturn}{Returns}
-Копия даты до увеличения.
+Копия даты до изменения. 
 \end{DoxyReturn}
-\+[Задание 2] date++ сохраняет старую дату, увеличивает текущую и возвращает сохранённую копию. Параметр int отличает постфиксную форму от префиксной. \Hypertarget{class_date_aa507b1b99767eea29296b4907ef81755}\index{Date@{Date}!operator+=@{operator+=}}
+\Hypertarget{class_date_aa507b1b99767eea29296b4907ef81755}\index{Date@{Date}!operator+=@{operator+=}}
 \index{operator+=@{operator+=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
 {\footnotesize\ttfamily \label{class_date_aa507b1b99767eea29296b4907ef81755} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator+= (\begin{DoxyParamCaption}\item[{int}]{days}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator+= (\begin{DoxyParamCaption}\item[{int}]{days}{}\end{DoxyParamCaption})}
 
 
 
 Прибавляет к дате заданное количество дней. 
 
+Прибавляет указанное число дней к текущей дате.
+
 
 \begin{DoxyParams}{Parameters}
-{\em days} & Количество прибавляемых дней. \\
+{\em days} & Количество дней. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ссылка на текущий объект.
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
-\+[Задание 3] Оператор += изменяет текущий объект. \Hypertarget{class_date_a254e8797b23c95b07e1814de557f0e51}\index{Date@{Date}!operator-\/@{operator-\/}}
+\Hypertarget{class_date_a254e8797b23c95b07e1814de557f0e51}\index{Date@{Date}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
 {\footnotesize\ttfamily \label{class_date_a254e8797b23c95b07e1814de557f0e51} 
-long long Date::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+long long Date::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -322,57 +338,63 @@ long long Date::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\h
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Разность порядковых номеров в днях.
+Разность порядковых номеров дат в днях.
 \end{DoxyReturn}
-\+[Задание 4] \doxylink{class_date}{Date} -\/ \doxylink{class_date}{Date} возвращает число дней, тогда как \doxylink{class_date}{Date} -\/ int возвращает объект \doxylink{class_date}{Date}. \Hypertarget{class_date_af94a19bebfa4018745039275d9eab42e}\index{Date@{Date}!operator-\/-\/@{operator-\/-\/}}
+\doxylink{class_date}{Date} -\/ \doxylink{class_date}{Date} возвращает число дней, тогда как \doxylink{class_date}{Date} -\/ int возвращает объект \doxylink{class_date}{Date}. \Hypertarget{class_date_af94a19bebfa4018745039275d9eab42e}\index{Date@{Date}!operator-\/-\/@{operator-\/-\/}}
 \index{operator-\/-\/@{operator-\/-\/}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_date_af94a19bebfa4018745039275d9eab42e} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator-\/-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator-\/-\/ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Префиксный декремент даты. 
+Префиксный декремент. 
+
+Выполняет префиксный декремент даты.
 
 \begin{DoxyReturn}{Returns}
-Ссылка на изменённый объект.
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
-\+[Задание 2] --date переводит дату на предыдущий день. \Hypertarget{class_date_ac2237a5f9f832bb521fe8f299a47db95}\index{Date@{Date}!operator-\/-\/@{operator-\/-\/}}
+\Hypertarget{class_date_ac2237a5f9f832bb521fe8f299a47db95}\index{Date@{Date}!operator-\/-\/@{operator-\/-\/}}
 \index{operator-\/-\/@{operator-\/-\/}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_date_ac2237a5f9f832bb521fe8f299a47db95} 
-\doxymbox{\hyperlink{class_date}{Date}} Date::\+operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} Date::\+operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{}{}\end{DoxyParamCaption})}
 
 
 
-Постфиксный декремент даты. 
+Постфиксный декремент. 
+
+Выполняет постфиксный декремент даты.
 
 \begin{DoxyReturn}{Returns}
-Копия даты до уменьшения.
+Копия даты до изменения. 
 \end{DoxyReturn}
-\+[Задание 2] date-- сохраняет старую дату, уменьшает текущую и возвращает сохранённую копию. \Hypertarget{class_date_a6bc50f3ce739cdb784b565f57632cc58}\index{Date@{Date}!operator-\/=@{operator-\/=}}
+\Hypertarget{class_date_a6bc50f3ce739cdb784b565f57632cc58}\index{Date@{Date}!operator-\/=@{operator-\/=}}
 \index{operator-\/=@{operator-\/=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
 {\footnotesize\ttfamily \label{class_date_a6bc50f3ce739cdb784b565f57632cc58} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator-\/= (\begin{DoxyParamCaption}\item[{int}]{days}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator-\/= (\begin{DoxyParamCaption}\item[{int}]{days}{}\end{DoxyParamCaption})}
 
 
 
 Вычитает из даты заданное количество дней. 
 
+Вычитает указанное число дней из текущей даты.
+
 
 \begin{DoxyParams}{Parameters}
-{\em days} & Количество вычитаемых дней. \\
+{\em days} & Количество дней. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ссылка на текущий объект.
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
-\+[Задание 3] Оператор -\/= изменяет текущий объект. \Hypertarget{class_date_a418925e3cf6491db1832b56ef1b7e8d0}\index{Date@{Date}!operator/=@{operator/=}}
+\Hypertarget{class_date_a418925e3cf6491db1832b56ef1b7e8d0}\index{Date@{Date}!operator/=@{operator/=}}
 \index{operator/=@{operator/=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
 {\footnotesize\ttfamily \label{class_date_a418925e3cf6491db1832b56ef1b7e8d0} 
-\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator/\+= (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\doxymbox{\hyperlink{class_date}{Date}} \& Date::\+operator/\+= (\begin{DoxyParamCaption}\item[{int}]{value}{}\end{DoxyParamCaption})}
 
 
 
@@ -384,18 +406,18 @@ long long Date::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\h
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ссылка на текущий объект. 
+Ссылка на изменённый объект. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em invalid\+\_\+argument} & Если делитель равен нулю.\\
+{\em invalid\+\_\+argument} & При делении на ноль. \\
 \hline
 \end{DoxyExceptions}
-\+[Задание 3] Оператор /= использует целочисленное деление. \Hypertarget{class_date_a56469dbfb6a0c32326330796cb316881}\index{Date@{Date}!operator$<$@{operator$<$}}
+\Hypertarget{class_date_a56469dbfb6a0c32326330796cb316881}\index{Date@{Date}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
 {\footnotesize\ttfamily \label{class_date_a56469dbfb6a0c32326330796cb316881} 
-bool Date::\+operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -403,53 +425,53 @@ bool Date::\+operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperl
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если текущая дата раньше other.
+true, если текущая дата раньше other; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения \texorpdfstring{$<$}{<}. \Hypertarget{class_date_aff6e110a1bba92225dfa094e904c003e}\index{Date@{Date}!operator$<$=@{operator$<$=}}
 \index{operator$<$=@{operator$<$=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
 {\footnotesize\ttfamily \label{class_date_aff6e110a1bba92225dfa094e904c003e} 
-bool Date::\+operator$<$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator$<$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
-Проверяет, что дата раньше или совпадает с другой. 
+Проверяет, что текущая дата раньше или равна другой. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если текущая дата меньше или равна other.
+true, если текущая дата меньше или равна other; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения \texorpdfstring{$<$}{<}=. \Hypertarget{class_date_a3b103cc8257d3055aedb519fff343503}\index{Date@{Date}!operator==@{operator==}}
 \index{operator==@{operator==}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
 {\footnotesize\ttfamily \label{class_date_a3b103cc8257d3055aedb519fff343503} 
-bool Date::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator== (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
-Проверяет равенство дат. 
+Проверяет равенство двух дат. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если даты совпадают.
+true, если даты совпадают; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения ==. \Hypertarget{class_date_ab2943ef426612046e084e2d885c5fed4}\index{Date@{Date}!operator$>$@{operator$>$}}
 \index{operator$>$@{operator$>$}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
 {\footnotesize\ttfamily \label{class_date_ab2943ef426612046e084e2d885c5fed4} 
-bool Date::\+operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -457,41 +479,41 @@ bool Date::\+operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperl
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если текущая дата позже other.
+true, если текущая дата позже other; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения \texorpdfstring{$>$}{>}. \Hypertarget{class_date_a93d583e1a8eae7cc606a6fdbfc3c5c58}\index{Date@{Date}!operator$>$=@{operator$>$=}}
 \index{operator$>$=@{operator$>$=}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
 {\footnotesize\ttfamily \label{class_date_a93d583e1a8eae7cc606a6fdbfc3c5c58} 
-bool Date::\+operator$>$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+bool Date::\+operator$>$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_date}{Date}} \&}]{other}{}\end{DoxyParamCaption}) const}
 
 
 
-Проверяет, что дата позже или совпадает с другой. 
+Проверяет, что текущая дата позже или равна другой. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em other} & Другая дата. \\
+{\em other} & Другая дата для сравнения. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true, если текущая дата больше или равна other.
+true, если текущая дата больше или равна other; иначе false.
 \end{DoxyReturn}
 \+[Задание 4] Оператор сравнения \texorpdfstring{$>$}{>}=. \Hypertarget{class_date_aa3b521a999bdfafb51a934f01f8f6c9c}\index{Date@{Date}!print@{print}}
 \index{print@{print}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{print()}{print()}}
 {\footnotesize\ttfamily \label{class_date_aa3b521a999bdfafb51a934f01f8f6c9c} 
-void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
 Выводит дату в формате ДД.\+ММ.\+ГГГГ. 
 
-Увеличивает счётчик обращений. Метод const не меняет саму дату, а изменение access\+Count разрешено благодаря mutable. 
+
 
 \label{class_date_doc-related-members}
 \Hypertarget{class_date_doc-related-members}
@@ -508,15 +530,15 @@ void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hs
 
 
 \begin{DoxyParams}{Parameters}
-{\em lhs} & Копия исходной даты. \\
+{\em lhs} & Исходная дата. \\
 \hline
 {\em value} & Множитель. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Новая дата.
+Новая дата. 
 \end{DoxyReturn}
-\+[Задание 4] Бинарный оператор \texorpdfstring{$\ast$}{*} не изменяет исходную дату. \Hypertarget{class_date_a85cb7692125ef02b0f365066682174d1}\index{Date@{Date}!operator+@{operator+}}
+\Hypertarget{class_date_a85cb7692125ef02b0f365066682174d1}\index{Date@{Date}!operator+@{operator+}}
 \index{operator+@{operator+}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator+}{operator+}}
 {\footnotesize\ttfamily \label{class_date_a85cb7692125ef02b0f365066682174d1} 
@@ -528,15 +550,15 @@ void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hs
 
 
 \begin{DoxyParams}{Parameters}
-{\em lhs} & Копия исходной даты. \\
+{\em lhs} & Исходная дата. \\
 \hline
-{\em days} & Количество прибавляемых дней. \\
+{\em days} & Число дней. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Новая дата.
+Новая дата. 
 \end{DoxyReturn}
-\+[Задание 4] Бинарный оператор + не изменяет исходный объект: он получает копию, изменяет её и возвращает результат. friend разрешает функции доступ к закрытым членам класса. \Hypertarget{class_date_a4634000e48f34baa13eb75c81e41136f}\index{Date@{Date}!operator-\/@{operator-\/}}
+\Hypertarget{class_date_a4634000e48f34baa13eb75c81e41136f}\index{Date@{Date}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator-\/}{operator-}}
 {\footnotesize\ttfamily \label{class_date_a4634000e48f34baa13eb75c81e41136f} 
@@ -548,15 +570,15 @@ void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hs
 
 
 \begin{DoxyParams}{Parameters}
-{\em lhs} & Копия исходной даты. \\
+{\em lhs} & Исходная дата. \\
 \hline
-{\em days} & Количество вычитаемых дней. \\
+{\em days} & Число дней. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Новая дата.
+Новая дата. 
 \end{DoxyReturn}
-\+[Задание 4] Бинарный оператор -\/ для \doxylink{class_date}{Date} и int. \Hypertarget{class_date_ac0501aa1fe2457b4f89525611f9e9cff}\index{Date@{Date}!operator/@{operator/}}
+\Hypertarget{class_date_ac0501aa1fe2457b4f89525611f9e9cff}\index{Date@{Date}!operator/@{operator/}}
 \index{operator/@{operator/}!Date@{Date}}
 \doxysubsubsection{\texorpdfstring{operator/}{operator/}}
 {\footnotesize\ttfamily \label{class_date_ac0501aa1fe2457b4f89525611f9e9cff} 
@@ -568,7 +590,7 @@ void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hs
 
 
 \begin{DoxyParams}{Parameters}
-{\em lhs} & Копия исходной даты. \\
+{\em lhs} & Исходная дата. \\
 \hline
 {\em value} & Делитель. \\
 \hline
@@ -577,12 +599,8 @@ void Date::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hs
 Новая дата. 
 \end{DoxyReturn}
 
-\begin{DoxyExceptions}{Exceptions}
-{\em invalid\+\_\+argument} & Если делитель равен нулю.\\
-\hline
-\end{DoxyExceptions}
-\+[Задание 4] Бинарный оператор / не изменяет исходную дату. 
 
-The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
+\doxymbox{\hyperlink{_date_8h}{Date.\+h}}\item 
+\doxymbox{\hyperlink{_date_8cpp}{Date.\+cpp}}\end{DoxyCompactItemize}
